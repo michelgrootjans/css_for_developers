@@ -11,6 +11,6 @@ class HomeController < ApplicationController
   def ruby
   end
 
-  def java
+  def css
   end
 end
