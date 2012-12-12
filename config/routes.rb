@@ -1,5 +1,8 @@
 CssForDevelopers::Application.routes.draw do
 
+  resources :pages
+
+
   get "css/index"
 
   get "css/css"
