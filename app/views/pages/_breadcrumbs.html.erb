@@ -2,4 +2,5 @@
   <% current_page.ancestors.each do |page| %>
     <%= link_to page.name, page %> &gt;
   <% end %>
+  <%= link_to current_page.name, current_page %>
 </div>
