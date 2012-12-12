@@ -1,4 +1,4 @@
-<ul id="menu">
+<ul>
   <% for page in Page.roots %>
       <li><%= link_to page.name, page, class: ("active" if @page.root == page) %></li>
   <% end %>
