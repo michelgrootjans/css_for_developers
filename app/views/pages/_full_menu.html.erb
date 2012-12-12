@@ -1,9 +1,8 @@
-<div id="menu">
-  <ul>
-    <% for page in Page.roots %>
-        <li <%= "class=active" if current_page.root == page %> >
-          <%= render 'menu_item', page: page %>
-        </li>
-    <% end %>
-  </ul>
-</div>
+<ul>
+  <% for page in Page.roots %>
+      <li <%= "class=active" if current_page.root == page %> >
+        <%= link_to page.name, page %>
+        <%= render "submenu_of", page: page %>
+      </li>
+  <% end %>
+</ul>
