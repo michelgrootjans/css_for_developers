@@ -1,12 +1,3 @@
-<% pages = current_page.root.descendants.arrange  %>
-
 <div id="submenu">
-  <ul>
-    <% pages.each do |page, children| %>
-        <li>
-          <%= link_to page.name, page %>
-          <%= render 'submenu_children', pages: children if children.present? %>
-        </li>
-    <% end %>
-  </ul>
+  <%= render "submenu_of", page: @page.root %>
 </div>

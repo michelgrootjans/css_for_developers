@@ -1,6 +1,9 @@
 <% content_for :title, @page.name %>
 
-<%= render 'full_menu', current_page: @page %>
+
+<%= render 'root_menu', current_page: @page %>
+
+<%= render 'submenu', current_page: @page %>
 
 <%= render 'breadcrumbs', current_page: @page %>
 
