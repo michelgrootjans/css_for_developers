@@ -2,15 +2,16 @@ class HomeController < ApplicationController
   def index
   end
 
-  def dotnet
+  def fixed_grid
+
   end
 
-  def javascript
+  def fluid_grid
+
   end
 
-  def ruby
+  def responsive_visibility
+
   end
 
-  def css
-  end
 end

@@ -1,5 +1,7 @@
 CssForDevelopers::Application.routes.draw do
-  root :to => 'pages#index'
+  root :to => 'home#index'
 
   resources :pages
+
+  get "home/(:action)" => "home"
 end

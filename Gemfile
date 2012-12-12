@@ -13,3 +13,4 @@ end
 
 gem 'jquery-rails'
 gem 'ancestry'
+gem 'inherited_resources'
