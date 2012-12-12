@@ -1,24 +1,11 @@
 <% content_for :title, @page.name %>
 
-<div id="menu">
-  <%= render 'menu' %>
-</div>
+<%= render 'menu', current_page: @page %>
 
-<div id="submenu">
-  <%= render 'submenu', pages: @page.root.descendants.arrange %>
-</div>
+<%= render 'submenu', current_page: @page %>
 
-<div id="breadcrumbs">
-  <%= render 'breadcrumbs' %>
-</div>
+<%= render 'breadcrumbs', current_page: @page %>
 
-<div id="notice">
-  <%= render :partial => 'notice' %>
-</div>
+<%= render 'notice' %>
 
-<h1><%= @page.name %></h1>
-
-<%= simple_format @page.content %>
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<%= render 'content', current_page: @page %>

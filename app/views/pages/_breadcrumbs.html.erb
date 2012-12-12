@@ -1,3 +1,5 @@
-<% @page.ancestors.each do |page| %>
+<div id="breadcrumbs">
+  <% current_page.ancestors.each do |page| %>
     <%= link_to page.name, page %> &gt;
-<% end %>
+  <% end %>
+</div>
