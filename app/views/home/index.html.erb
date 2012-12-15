@@ -1,13 +1,20 @@
 <h1>CSS for developers</h1>
 
-<h2>Grid system</h2>
+<h2>Css compiler: Less</h2>
+<h3></h3>
+<ul>
+  <li><%= link_to "Example", "/less_exercises" %></li>
+</ul>
+
+<h2>Css framework: Twitter Bootstrap</h2>
+<h3>Grid system</h3>
 <ul>
   <li><%= link_to "Fixed Grid", "/home/fixed_grid" %></li>
   <li><%= link_to "Fluid Grid", "/home/fluid_grid" %></li>
   <li><%= link_to "Visibility", "/home/responsive_visibility" %></li>
 </ul>
 
-<h2>Cms</h2>
+<h3>Cms</h3>
 <ul id="menu">
   <% for page in Page.roots %>
       <li><%= link_to page.name, page %></li>
