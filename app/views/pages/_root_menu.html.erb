@@ -1,7 +1,7 @@
 <div id="menu">
   <ul>
     <% for page in Page.roots %>
-        <li <%= "class=active" if current_page.root == page %> >
+        <li <%= "class=active" if @page.root == page %> >
           <%= link_to page.name, page %>
         </li>
     <% end %>
