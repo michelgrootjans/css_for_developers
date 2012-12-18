@@ -6,7 +6,7 @@ gem 'sqlite3'
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'therubyracer'
+  gem 'therubyracer', platform: :ruby
   gem 'less-rails'
   gem 'twitter-bootstrap-rails'
 end
