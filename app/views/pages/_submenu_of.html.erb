@@ -1,7 +1,7 @@
 <% if page.has_children? %>
     <ul>
       <% for child_page in page.children %>
-          <li <%= "class=active" if @page == child_page %> >
+          <li>
             <%= link_to child_page.name, child_page %>
             <%= render "submenu_of", page: child_page %>
           </li>
